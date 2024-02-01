@@ -33,9 +33,9 @@ int main()
 
 	cin >> N >> M;
 
-	int *parent = new int[N + 1];
+	int *parent = new int[N + 1]; // root of graph
 	for (int i = 1; i <= N; i++)
-		parent[i] = i;
+		parent[i] = i; // initialize
 
 	for (int i = 0; i < M; i++)
 	{
@@ -43,14 +43,13 @@ int main()
 		cin >> x >> y;
 		merge(parent, x, y);
 	}
-
 	for (int i = 1; i <= N; i++)
 	{
 		find(parent, i);
 	}
 
-	int cnt = 0;
-	for (int i = 1; i <= N; i++)
+	int cnt = 0;				 // the number of different graphs
+	for (int i = 1; i <= N; i++) // counting
 	{
 		int j;
 		for (j = 1; j < i; j++)
