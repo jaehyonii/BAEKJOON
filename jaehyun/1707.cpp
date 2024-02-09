@@ -26,6 +26,7 @@ bool BFS(int V, int E)
 	{
 		if (color[i] != 0)
 			continue;
+
 		color[i] = 1;
 		Queue.push(i);
 		while (!Queue.empty())
