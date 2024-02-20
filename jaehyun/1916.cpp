@@ -23,7 +23,7 @@ void Dijkstra(int start)
 		int cur = q.front();
 		for (auto it = graph[cur].begin(); it != graph[cur].end(); it++)
 		{
-			if (visited[it->first] == false && dist[cur] + it->second < dist[it->first])
+			if (dist[cur] + it->second < dist[it->first])
 				dist[it->first] = dist[cur] + it->second;
 		}
 
