@@ -10,7 +10,7 @@ int main()
 	cin.tie(nullptr);
 	cout.tie(nullptr);
 
-	int N; // the number of pendulum
+	int N; // the number of pendulu
 	cin >> N;
 	int pendulum[31];
 	int max = 0; // the max value which can be made with pendulums
