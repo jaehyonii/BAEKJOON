@@ -34,7 +34,7 @@ int main()
 	for (int i = 0; i <= K; i++) // initialize
 		dp[i] = 0;
 
-	// kanpsack problem
+	// knapsack problem
 	for (int i = 1; i <= N; i++)
 	{
 		for (int j = K; j >= 0; j--)
